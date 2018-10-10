@@ -16,7 +16,7 @@ Next generate the necessary demo content( Customizer Settings, WordPress Content
 
 Place the imported file somewhere in your theme directory inside the folder
 
-[folder-structure](https://accesspressthemes.com/wp-content/uploads/2018/10/folder-structure.png)
+![folder-structure](https://accesspressthemes.com/wp-content/uploads/2018/10/folder-structure.png)
 
 Now, Integrate the demo installation in your theme by,
 
