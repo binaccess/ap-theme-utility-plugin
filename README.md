@@ -18,7 +18,7 @@ Place the imported file somewhere in your theme directory inside the folder
 
 ![folder-structure](https://accesspressthemes.com/wp-content/uploads/2018/10/folder-structure.png)
 
-Now, Integrate the demo installation in your theme by,
+Now, Integrate the demo installation adding following code to functions.php file in your theme by,
 
 ```
 <?php
@@ -60,3 +60,13 @@ Now, Integrate the demo installation in your theme by,
 ```
 
 ### Explanation:
+
+- $demos : An array that defines a list of demos available for installation.
+
+-- title: Title of a demo
+-- name: folder name of the demo
+-- screenshot: Demo preview image ( size for the image 512 x 384) 
+-- home_page: Slug of a front page to be displayed if set any.
+-- menus: An array containing a list of menus in ```name => location ``` format
+
+- $demo_dir : Path where the demo folder exists.
