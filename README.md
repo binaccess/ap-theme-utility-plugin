@@ -14,26 +14,48 @@ Next generate the necessary demo content( Customizer Settings, WordPress Content
 - [Widget Importer & Exporter](https://wordpress.org/plugins/widget-importer-exporter/),
 - [WordPress Importer](https://wordpress.org/plugins/wordpress-importer/)
 
+Place the imported file somewhere in your theme directory inside the folder
+
+[folder-structure](https://accesspressthemes.com/wp-content/uploads/2018/10/folder-structure.png)
+
 Now, Integrate the demo installation in your theme by,
 
 ```
 <?php
+	// Initiate the APTU_Class class only if the plugin is installed & activated
 	if(class_exists('APTU_Class')) :
+
+		$demo_dir = get_template_directory() . '/path/to/demo-directory';
 
 		$demos = array(
 			'demo-one' => array(
-				'title' => __('Demo One', 'theme-slug'),
-				'name' => 'demo-one',
-				'screenshot' => get_template_directory_uri().'/path/to/demo-one/screen.png',
+				'title' => __('Demo One', 'theme-slug'), // Title for the demo
+				'name' => 'demo-one', // demo folder name
+				'screenshot' => get_template_directory_uri().'/path/to/demo-one/screen.png', // demo preview image of size ( 512 x 384 )
+				'home_page' => 'front-page', // slug of the front page
+				'menus' => array(
+					'Main Menu' => 'primary', // list of menus used within the theme
+					'Footer Menu' => 'footer-menu',
+					...
+				)
+			),
+
+			'demo-two' => array(
+				'title' => __('Demo Two', 'theme-slug'),
+				'name' => 'demo-two',
+				'screenshot' => get_template_directory_uri().'/path/to/demo-two/screen.png',
 				'home_page' => 'front-page',
 				'menus' => array(
 					'Main Menu' => 'primary',
 					'Footer Menu' => 'footer-menu',
 				)
 			),
+
+			....
 		);
 
-		$demoimporter = new APTU_Class( $demos, $demo_dir='path\to\demo\directory' );
+		$demoimporter = new APTU_Class( $demos, $demo_dir );
+
 	endif;
 ```
 
