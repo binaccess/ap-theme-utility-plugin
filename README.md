@@ -16,7 +16,7 @@ Next generate the necessary demo content( Customizer Settings, WordPress Content
 
 Now, Integrate the demo installation in your theme by,
 
-`
+```
 <?php
 	if(class_exists('APTU_Class')) :
 
@@ -35,6 +35,6 @@ Now, Integrate the demo installation in your theme by,
 
 		$demoimporter = new APTU_Class( $demos, $demo_dir='path\to\demo\directory' );
 	endif;
-`
+```
 
 ### Explanation:
