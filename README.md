@@ -21,9 +21,9 @@ Now Name the download file as following respectively,
 | Customzier Options | customizer_options.dat |
 | WordPress Content | content.xml |
 | Widget Content | widgets.wie | 
-| Preview Image | screen.jpg |
+| Preview Image | screen.jpg ( 512 X 384px ) |
 
-Place the imported file somewhere in your theme directory inside the folder
+Place the imported file somewhere in your theme directory inside its respective folder
 
 ![folder-structure](https://accesspressthemes.com/wp-content/uploads/2018/10/fstructure.png)
 

@@ -70,27 +70,7 @@ This plugin provides the ability to to import the demo contents, widgets, theme 
 Yes, this plugin is compatible with all the free version of Accesspress themes.
 
 = How do I use the AP Theme Utility?
-After installing and activating the plugin you'll need to create an instance for the demo import. Here is a sample code snippet to do that
-`
-<?php
-	if(class_exists('APTU_Class')) :
-
-		$demos = array(
-			'test-demo' => array(
-				'title' => __('Test Demo', 'parallaxsome-pro'),
-				'name' => 'test-demo',
-				'screenshot' => get_template_directory_uri().'/path/to/test-demo/screen.png',
-				'home_page' => 'front-page',
-				'menus' => array(
-					'Main Menu' => 'primary',
-					'Footer Menu' => 'footer-menu',
-				)
-			),
-		);
-
-		$demoimporter = new APTU_Class( $demos, $demo_dir='path\to\demo\directory' );
-	endif;
-`
+[View Documentation](https://github.com/binaccess/ap-theme-utility-plugin) for all the information you need on configuring the AP Theme Utility in your theme.
 
 == Screenshots ==
 1. Backend Demo Installation Option.
