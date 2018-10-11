@@ -14,9 +14,18 @@ Next generate the necessary demo content( Customizer Settings, WordPress Content
 - [Widget Importer & Exporter](https://wordpress.org/plugins/widget-importer-exporter/),
 - [WordPress Importer](https://wordpress.org/plugins/wordpress-importer/)
 
+Now Name the download file as following respectively,
+
+| Downloaded File | File Name |
+| --------------- | --------- |
+| Customzier Options | customizer_options.dat |
+| WordPress Content | content.xml |
+| Widget Content | widgets.wie | 
+| Preview Image | screen.jpg |
+
 Place the imported file somewhere in your theme directory inside the folder
 
-![folder-structure](https://accesspressthemes.com/wp-content/uploads/2018/10/folder-structure.png)
+![folder-structure](https://accesspressthemes.com/wp-content/uploads/2018/10/fstructure.png)
 
 Now, Integrate the demo installation adding following code to functions.php file in your theme by,
 
