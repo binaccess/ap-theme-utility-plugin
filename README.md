@@ -61,7 +61,9 @@ Now, Integrate the demo installation adding following code to functions.php file
 
 ## Display Demo Import Options
 Now for displaying the demo import option upfront place the following following action hook in your theme page.
-``` <?php do_action('aptu_demo_importer'); ?> ```
+```
+<?php do_action('aptu_demo_importer'); ?>
+```
 
 ### Explanation:
 
