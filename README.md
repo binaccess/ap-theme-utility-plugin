@@ -59,12 +59,6 @@ Now, Integrate the demo installation adding following code to functions.php file
 	endif;
 ```
 
-## Display Demo Import Options
-Now for displaying the demo import option upfront place the following following action hook in your theme page.
-```
-<?php do_action('aptu_demo_importer'); ?>
-```
-
 ### Explanation:
 
 - $demos : An array that defines a list of demos available for installation.
@@ -76,3 +70,9 @@ Now for displaying the demo import option upfront place the following following 
 * menus: An array containing a list of menus in ```name => location ``` format
 
 - $demo_dir : Path where the demo folder exists.
+
+## Display Demo Import Options
+Now for displaying the demo import option upfront place the following following action hook in your theme page.
+```
+<?php do_action('aptu_demo_importer'); ?>
+```
